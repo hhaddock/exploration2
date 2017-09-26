@@ -48,7 +48,8 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        echo $result['password'];
+        echo password_hash($pass, PASSWORD_BCRYPT);
+        echo " ".$result['password'];
       }
     }
  ?>
