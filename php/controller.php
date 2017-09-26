@@ -19,7 +19,6 @@
     if($connection->checkUser($user) == 1){
       if($connection->checkPass($user, $pass) == 1){
        authenticated($user);
-       header("Location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321/")
       } else {
        echo "Username or Password was incorrect";
       }
@@ -31,5 +30,6 @@
   function authenticated($user){
    session_start();
    $_SESSION['user'] = $user;
+   header("Location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321/")
   }
 ?>
