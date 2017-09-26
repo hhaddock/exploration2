@@ -52,6 +52,8 @@
         $pw = password_hash($pass, PASSWORD_DEFAULT);
         if($pw == $result['password']){
          echo "true";
+        } else {
+         echo "False";
         }
       }
     }
