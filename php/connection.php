@@ -49,7 +49,7 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        $pw = password_hash($pass);
+        $pw = password_hash($pass, PASSWORD_DEFAULT);
         if($pw == $result['password']){
          echo "true";
         }
