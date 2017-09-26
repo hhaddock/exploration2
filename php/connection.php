@@ -49,11 +49,7 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        if($pw == $result['password']){
-         echo "true";
-        } else {
-         echo "$pw  ".$result['password'];
-        }
+        return password_verify($pass, $result['password']);
       }
     }
  ?>
