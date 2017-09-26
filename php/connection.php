@@ -37,11 +37,11 @@
           $stmt->bind_param("s", $user);
           $stmt->execute();
           $result = $stmt->get_result();
-          $result->fetch_array();
+          $result->fetch_assoc();
         } else {
           var_dump($this->conn->error);
         }
-        return password_verify($pass, $result['pass']);
+        return password_verify($pass, $result['password']);
       }
     }
  ?>
