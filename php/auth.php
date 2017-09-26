@@ -1,6 +1,6 @@
 <?php
  session_start();
- 
- echo $auth = $_SESSION['auth'];
+
+ echo $auth = $_SESSION['authenticated'];
  echo $user = $_SESSION['user'];
 ?>
