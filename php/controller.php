@@ -7,7 +7,7 @@
 
   require "connection.php";
 
-  public $connection = new webChatDB();
+  $connection = new webChatDB();
   $login = checkLogin();
 
   function checkLogin(){
