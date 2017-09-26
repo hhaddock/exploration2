@@ -9,5 +9,5 @@
     //   return $user." There is no password";
     // } else {
     //   return $user." ".$pass;
-    // }
+    }
 ?>
