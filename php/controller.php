@@ -30,6 +30,6 @@
   function authenticated($user){
    session_start();
    $_SESSION['user'] = $user;
-   header('Location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321/')
+   header('Location: http://www.google.com')
   }
 ?>
