@@ -28,7 +28,7 @@
         } else {
           var_dump($this->conn->error);
         }
-        print_r($result->fetch_assoc());
+        return $result->num_rows();
       }
     }
  ?>
