@@ -37,11 +37,11 @@
           $stmt->bind_param("s", $user);
           $stmt->execute();
           $result = $stmt->get_result();
-          $result->fetch_assoc();
+          print_r($result->fetch_assoc());
+          //$result->fetch_assoc();
         } else {
           var_dump($this->conn->error);
         }
-        print_r($result->fetch_assoc());
       }
     }
  ?>
