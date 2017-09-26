@@ -20,7 +20,7 @@
       if($connection->checkPass($user, $pass) == 1){
        authenticated($user);
       } else {
-       echo "Username or Password was incorrect";
+       echo "Password was incorrect";
       }
     } else {
      echo "username is incorrect";
@@ -30,6 +30,6 @@
   function authenticated($user){
    session_start();
    $_SESSION['user'] = $user;
-   header('Location: http://www.google.com')
+   echo "authenticated";
   }
 ?>
