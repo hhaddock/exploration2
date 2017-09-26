@@ -11,7 +11,7 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  $connection->changePass($user, "12345");
+  $connection->changePass($username, "12345");
 
   login($connection, $username, $password);
 
