@@ -11,7 +11,7 @@
   $user = $connection->checkUser($_POST['username']);
   $pass = $connection->checkPass($_POST['username'], $_POST['password']);
 
-  checkLogin($user, $pass);
+  // checkLogin($user, $pass);
 
   function checkLogin($user, $pass){
     echo $user." ".$pass;
