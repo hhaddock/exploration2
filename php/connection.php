@@ -28,7 +28,7 @@
         } else {
           var_dump($this->conn->error);
         }
-        echo $result;
+        print_r($result);
       }
     }
  ?>
