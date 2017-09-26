@@ -39,9 +39,9 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        echo $result['password'];
-        //$pass = password_verify($pass, $result['password']);
 
+        $pass = password_verify($pass, $result['password']);
+        return $pass;
       }
     }
  ?>
