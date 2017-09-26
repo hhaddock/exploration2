@@ -14,6 +14,6 @@
   checkLogin($user, $pass);
 
   function checkLogin($user, $pass){
-    echo $user." ".$pass;
+    echo $pass;
   }
 ?>
