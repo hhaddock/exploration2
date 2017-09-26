@@ -5,9 +5,9 @@
   echo $login;
 
   function checkLogin($user, $pass){
-    // if($pass == ""){
-    //   return $user." There is no password";
-    // } else {
-    //   return $user." ".$pass;
+    if($pass == ""){
+      return $user." There is no password";
+    } else {
+      return $user." ".$pass;
     }
 ?>
