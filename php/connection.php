@@ -39,7 +39,7 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        print_r($result);
+        print_r($result['password']);
       }
     }
  ?>
