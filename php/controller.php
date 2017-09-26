@@ -10,11 +10,11 @@
   $connection = new webChatDB();
   $login = checkLogin();
 
+  print_r($connection);
   function checkLogin(){
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    print_r($connection);
     // $stmt = $connection->prepare(
     //   "SELECT * FROM users WHERE username = ?"
     // );
