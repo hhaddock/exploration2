@@ -18,7 +18,7 @@
         $connection->close();
       }
 
-      public function checkUser(){
+      public function checkUser($user){
         $stmt = $this->conn->prepare(
           "SELECT * FROM users WHERE username = ?"
         );
