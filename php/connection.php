@@ -37,7 +37,7 @@
           $stmt->bind_param("s", $user);
           $stmt->execute();
           $result = $stmt->get_result();
-          $result->fetch_assoc();
+          $result->fetch_array();
         } else {
           var_dump($this->conn->error);
         }
