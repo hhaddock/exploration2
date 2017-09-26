@@ -19,13 +19,14 @@
       }
 
       public function checkUser($user){
-        $stmt = $this->conn->prepare(
-          "SELECT * FROM users WHERE username = ?"
-        );
-        $stmt->bind_param("s", $user);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        echo $result;
+        // $stmt = $this->conn->prepare(
+        //   "SELECT * FROM users WHERE username = ?"
+        // );
+        // $stmt->bind_param("s", $user);
+        // $stmt->execute();
+        // $result = $stmt->get_result();
+        // echo $result;
+        echo $user;
       }
     }
  ?>
