@@ -31,5 +31,6 @@
    session_start();
    $_SESSION['user'] = $user;
    echo "authenticated";
+   header("location: http://google.com",  true,  301 );  exit;
   }
 ?>
