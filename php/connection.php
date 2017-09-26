@@ -30,5 +30,9 @@
         }
         return $result->num_rows;
       }
+
+      public function checkPass($pass){
+        return 1;
+      }
     }
  ?>
