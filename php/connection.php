@@ -48,7 +48,11 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        echo " ".$result['password'];
+        if(password_verify($pass, $result['password'])){
+         echo "authenticated";
+        } else {
+         var_dump(password_verify($pass, $result['password']));
+        }
       }
     }
  ?>
