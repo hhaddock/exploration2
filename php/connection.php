@@ -48,9 +48,6 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        if(password_verify($pass, $result['password'])){
-         echo "authenticated";
-        }
         return password_verify($pass, $result['password']);
       }
     }

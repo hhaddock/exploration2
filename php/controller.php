@@ -19,10 +19,18 @@
     if($connection->checkUser($user) == 1){
       echo $user." Exists";
       if($connection->checkPass($user, $pass) == 1){
-        echo " & ".$pass." is correct";
+       authenticated($user);
+       header("Location: ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321")
       } else {
-        echo $connection->checkPass($user, $pass);
+       echo "Username or Password was incorrect";
       }
+    } else {
+     echo "username is incorrect";
     }
+  }
+
+  function authenticated($user){
+   session_start();
+   $_SESSION['user'] = $user;
   }
 ?>
