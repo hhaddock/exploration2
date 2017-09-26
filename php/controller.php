@@ -19,7 +19,7 @@
       if($connection->checkPass($user, $pass) == 1){
         echo $pass." is correct";
       } else {
-        echo $pass." is incorrect";
+        echo $connection->checkPass($user, $pass);
       }
     }
   }
