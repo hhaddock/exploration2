@@ -10,7 +10,7 @@
         $username = "root";
         $password = "Tigersblvd16";
 
-        $connection = new mysqli ($servername, $username, $password);
+        $connection = new mysqli ($servername, $username, $password, "chatApp");
         return $connection;
       }
 
