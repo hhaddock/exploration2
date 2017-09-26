@@ -20,7 +20,7 @@
       }
 
       public function changePass($user, $pass){
-       $pw = password_hash($pass, PASSWORD_BCRYPT);
+       $pw = password_hash($pass, PASSWORD_DEFAULT);
        $stmt = $this->conn->prepare(
          "UPDATE users set password = ? WHERE username = ?"
        );
@@ -48,7 +48,6 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        echo password_hash($pass, PASSWORD_BCRYPT);
         echo " ".$result['password'];
       }
     }
