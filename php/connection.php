@@ -28,7 +28,7 @@
         } else {
           var_dump($this->conn->error);
         }
-        return $result->num_rows();
+        return $result->num_rows;
       }
     }
  ?>
