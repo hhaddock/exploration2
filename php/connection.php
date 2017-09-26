@@ -40,7 +40,7 @@
         } else {
           var_dump($this->conn->error);
         }
-        echo $result->fetch_assoc();
+         print_r($result->fetch_assoc());
       }
     }
  ?>
