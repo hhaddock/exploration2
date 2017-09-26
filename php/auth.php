@@ -1,5 +1,4 @@
 <?php
- $auth = $_SESSION['auth'];
- $user = $_SESSION['user'];
- echo $auth;
+ echo $auth = $_SESSION['auth'];
+ echo $user = $_SESSION['user'];
 ?>
