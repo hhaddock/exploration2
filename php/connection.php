@@ -28,7 +28,7 @@
         } else {
           var_dump($this->conn->error);
         }
-        print_r($result);
+        print_r($result->fetch_assoc());
       }
     }
  ?>
