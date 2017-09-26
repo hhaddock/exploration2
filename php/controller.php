@@ -5,5 +5,7 @@
   function checkLogin(){
     $user = $_POST['username'];
     $pass = $_POST['password'];
+
+    print_r($conn);
   }
 ?>
