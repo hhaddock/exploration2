@@ -9,7 +9,7 @@
         $servername = "localhost";
         $username   = "root";
         $password   = "Tigersblvd16";
-        $dbname     = "chatApp"
+        $dbname     = "chatApp";
 
         $connection = new mysqli ($servername, $username, $password, $dbname);
         return $connection;
