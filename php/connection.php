@@ -17,5 +17,15 @@
       public function disconnect($connection){
         $connection->close();
       }
+
+      public function checkUser(){
+        $stmt = $this->conn->prepare(
+          "SELECT * FROM users WHERE username = ?"
+        );
+        $stmt->bind_param("s", $user);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        echo $result;
+      }
     }
  ?>
