@@ -11,8 +11,6 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-//  $connection->changePass('atlas', '123');
-
   login($connection, $username, $password);
 
   function login($connection, $user, $pass){
@@ -23,14 +21,14 @@
        echo "Password was incorrect";
       }
     } else {
-     echo "username is incorrect";
+     echo "Username is incorrect";
     }
   }
 
   function authenticated($user){
    session_start();
+   $_SESSION['authenticated'] = 'true';
    $_SESSION['user'] = $user;
-   echo "authenticated";
    header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321",  true,  301 );  exit;
   }
 ?>
