@@ -49,7 +49,7 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        print_r($result);
+        return password_verify($pass, $result['password']);
       }
     }
  ?>
