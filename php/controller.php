@@ -11,6 +11,8 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
 
+  login($connection, $username, $password);
+
   function login($connection, $user, $pass){
     if($connection->checkUser($user) == 1){
       echo $user." Exists";
