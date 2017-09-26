@@ -8,12 +8,12 @@
   require "connection.php";
 
   $connection = new webChatDB();
-  $user = $connection->checkUser($_POST['username']);
-  $pass = $connection->checkPass($_POST['username'], $_POST['password']);
+  $username = $_POST['username'];
+  $password = $_POST['password'];
 
-  checkLogin($user, $pass);
-
-  function checkLogin($user, $pass){
-    echo $pass;
+  function login($connection, $user, $pass){
+    if($connection->checkUser($user) == 1){
+      echo $user." Exists";
+    }
   }
 ?>
