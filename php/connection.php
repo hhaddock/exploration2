@@ -53,7 +53,7 @@
         if($pw == $result['password']){
          echo "true";
         } else {
-         echo "False";
+         echo "$pw  ".$result['password'];
         }
       }
     }
