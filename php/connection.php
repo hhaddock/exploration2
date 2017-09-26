@@ -50,9 +50,8 @@
         $result = $result->fetch_assoc();
         if(password_verify($pass, $result['password'])){
          echo "authenticated";
-        } else {
-         var_dump(password_verify($pass, $result['password']));
         }
+        return password_verify($pass, $result['password']);
       }
     }
  ?>
