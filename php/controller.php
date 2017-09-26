@@ -1,11 +1,5 @@
 <?php
-  include_once "connection.php";
-  $login = checkLogin();
+  $connection = new webChatDB();
 
-  function checkLogin(){
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
-
-    print_r($conn);
-  }
+  print_r($connection);
 ?>

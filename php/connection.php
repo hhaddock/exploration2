@@ -1,11 +1,21 @@
 <?php
-  $servername = "localhost";
-  $username = "root";
-  $password = "Tigersblvd16";
+    class webChatDB {
+      public $conn;
 
-  $conn = mysqli_connect($servername, $username, $password);
-  // Check connection
-  if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-  }
+      function __construct(){
+        $this->conn = $this->connect();
+      }
+      private function connect(){
+        $servername = "localhost";
+        $username = "root";
+        $password = "Tigersblvd16";
+
+        $connection = new mysqli ($servername, $username, $password);
+        return $connection;
+      }
+
+      public function disconnect($connection){
+        $connection->close();
+      }
+    }
  ?>
