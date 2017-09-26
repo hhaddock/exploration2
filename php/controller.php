@@ -14,7 +14,7 @@
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    $stmt = $this->conn->prepare(
+    $stmt = $connection->prepare(
       "SELECT * FROM users WHERE username = ?"
     );
     $stmt->bind_param("s", $user);
