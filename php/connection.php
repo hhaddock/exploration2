@@ -22,7 +22,7 @@
         $stmt = $this->conn->prepare(
           "SELECT * FROM users WHERE username = ?"
         );
-        // $stmt->bind_param("s", $user);
+        $stmt->bind_param("s", $user);
         // $stmt->execute();
         // $result = $stmt->get_result();
       }
