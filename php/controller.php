@@ -14,12 +14,13 @@
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    $stmt = $connection->prepare(
-      "SELECT * FROM users WHERE username = ?"
-    );
-    $stmt->bind_param("s", $user);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    echo $result;
+    print_r($connection);
+    // $stmt = $connection->prepare(
+    //   "SELECT * FROM users WHERE username = ?"
+    // );
+    // $stmt->bind_param("s", $user);
+    // $stmt->execute();
+    // $result = $stmt->get_result();
+    // echo $result;
   }
 ?>
