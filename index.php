@@ -11,5 +11,11 @@
       <label>Passsword: </label><input type="password" name="password">
       <input type="submit" value="Login">
     </form>
+
+    <?php
+      if(isset($_POST['username'])){
+        echo $_POST['username'];
+      }
+     ?>
   </body>
 </html>
