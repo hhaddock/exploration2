@@ -20,13 +20,12 @@
       }
 
       public function changePass($user, $pass){
-       $pw = password_hash($pass, PASSWORD_DEFAULT);
+       $pw = password_hash($pass, PASSWORD_BCRYPT);
        $stmt = $this->conn->prepare(
          "UPDATE users set password = ? WHERE username = ?"
        );
        $stmt->bind_param("ss", $pw, $user);
        $stmt->execute();
-       $result = $stmt->get_result();
       }
 
       public function checkUser($user){
