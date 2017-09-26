@@ -39,8 +39,11 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        echo $pass;
-        // return password_verify($pass, $result['password']);
+        if(password_verify($pass, $result['password'])){
+         echo "True";
+        } else {
+         echo "false";
+        }
       }
     }
  ?>
