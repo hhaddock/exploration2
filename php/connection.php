@@ -32,16 +32,6 @@
       }
 
       public function checkPass($user, $pass){
-        // $query = "SELECT password FROM users WHERE username = ?";
-        // if($stmt = $this->conn->prepare($query)){
-        //   $stmt->bind_param("s", $user);
-        //   $stmt->execute();
-        //   $result = $stmt->get_result();
-        //   print_r($result->fetch_assoc());
-        //   //$result->fetch_assoc();
-        // } else {
-        //   var_dump($this->conn->error);
-        // }
         $stmt = $this->conn->prepare(
           "SELECT password FROM users WHERE username = ?"
         );
@@ -49,7 +39,9 @@
         $stmt->execute();
         $result = $stmt->get_result();
         $result = $result->fetch_assoc();
-        return password_verify($pass, $result['password']);
+        echo $result['password'];
+        //$pass = password_verify($pass, $result['password']);
+
       }
     }
  ?>
