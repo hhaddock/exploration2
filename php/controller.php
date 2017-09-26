@@ -31,6 +31,6 @@
    session_start();
    $_SESSION['user'] = $user;
    echo "authenticated";
-   header("location: http://google.com",  true,  301 );  exit;
+   header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321",  true,  301 );  exit;
   }
 ?>
