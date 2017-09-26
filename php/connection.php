@@ -41,7 +41,8 @@
         } else {
           var_dump($this->conn->error);
         }
-        return password_verify($pass, $result['password']);
+        echo $result['password'];
+        // return password_verify($pass, $result['password']);
       }
     }
  ?>
