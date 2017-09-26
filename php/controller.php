@@ -1,7 +1,11 @@
 <?php
   include_once "php/connection.php";
-  $login = checkLogin($_POST['username'], $_POST['password']);
+  $login = checkLogin();
 
-  function checkLogin($user, $pass){
-    echo $user;
+  function checkLogin(){
+    $user = $_POST['username'];
+    $pass = $_POST['password'];
+
+    echo $user." ".$pass;
+  }
 ?>
