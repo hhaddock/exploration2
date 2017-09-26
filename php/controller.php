@@ -18,12 +18,11 @@
   function login($connection, $user, $pass){
     if($connection->checkUser($user) == 1){
       echo $user." Exists";
-      $connection->checkPass($user, $pass);
-      // if($connection->checkPass($user, $pass) == 1){
-      //   echo $pass." is correct";
-      // } else {
-      //   echo $connection->checkPass($user, $pass);
-      // }
+      if($connection->checkPass($user, $pass) == 1){
+        echo " & ".$pass." is correct";
+      } else {
+        echo $connection->checkPass($user, $pass);
+      }
     }
   }
 ?>
