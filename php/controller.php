@@ -10,5 +10,5 @@
     // } else {
     //   return $user." ".$pass;
     // }
-    echo $user." ".$pass;
+    return $user." ".$pass;
 ?>
