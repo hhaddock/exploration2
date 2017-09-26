@@ -31,8 +31,16 @@
         return $result->num_rows;
       }
 
-      public function checkPass($pass){
-        return 1;
+      public function checkPass($user, $pass){
+        $query = "SELECT password FROM users WHERE username = ?";
+        if($stmt = $this->conn->prepare($query)){
+          $stmt->bind_param("s", $user);
+          $stmt->execute();
+          $result = $stmt->get_result();
+        } else {
+          var_dump($this->conn->error);
+        }
+        echo $result->fetch_assoc();
       }
     }
  ?>

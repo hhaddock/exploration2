@@ -9,7 +9,7 @@
 
   $connection = new webChatDB();
   $user = $connection->checkUser($_POST['username']);
-  $pass = $connection->checkPass($_POST['password']);
+  $pass = $connection->checkPass($_POST['username'], $_POST['password']);
 
   checkLogin($user, $pass);
 
