@@ -38,11 +38,11 @@
           $stmt->execute();
           $result = $stmt->get_result();
           $result->fetch_assoc();
+          return password_verify($pass, $result['password']);
         } else {
           var_dump($this->conn->error);
         }
-        print_r($result);
-        // return password_verify($pass, $result['password']);
+        // print_r($result);
       }
     }
  ?>
