@@ -16,7 +16,7 @@
   function login($connection, $user, $pass){
     if($connection->checkUser($user) == 1){
       if($connection->checkPass($user, $pass) == 1){
-       authenticated($user);
+       authenticated($connection, $user);
       } else {
        echo "Password was incorrect";
       }
@@ -25,7 +25,7 @@
     }
   }
 
-  function authenticated($user){
+  function authenticated($connection, $user){
    session_start();
    $auth = 1;
    $_SESSION['user'] = $user;
