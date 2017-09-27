@@ -4,4 +4,8 @@ $(document).ready(function(){
 
   $("#title").fadeIn(800).delay(2000);
   $("#loginForm").slideDown(1000);
+
+  $("#createAcct").click(function(){
+    alert("Test");
+  });
 });

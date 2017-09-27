@@ -24,7 +24,7 @@
           <input type="submit" value="Login" class ="btn btn-primary">
         </form>
         <br>
-        <span><a href="#">Create Account</a></span>
+        <span><a id="createAcct">Create Account</a></span>
       </div>
     </div>
   </body>
