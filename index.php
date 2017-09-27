@@ -24,7 +24,7 @@
           <input type="submit" value="Login" class ="btn btn-primary">
         </form>
         <br>
-        <form id="loginForm" action="php/controller.php" method="post">
+        <form id="createAcctForm" class="hidden" action="php/controller.php" method="post">
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
