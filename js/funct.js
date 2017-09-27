@@ -3,5 +3,5 @@ $(document).ready(function(){
   $("#title").hide();
 
   $("#title").fadeIn(800).delay(2000);
-  $("#loginForm").slideDown(800);
+  $("#loginForm").slideDown(12000);
 });
