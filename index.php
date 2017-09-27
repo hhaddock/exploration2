@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container jumbotron">
-      <h1>Hayden's Web Chat</h1>
+      <h1 class="text-center">Hayden's Web Chat</h1>
       <hr>
       <div class="col-md-6 col-md-push-3">
         <form action="php/controller.php" method="post">
@@ -22,6 +22,10 @@
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
         </form>
+      </div>
+      <hr>
+      <div class="col-md-6 col-md-push-3">
+        <span><a href="#">Create Account</a></span>
       </div>
     </div>
   </body>
