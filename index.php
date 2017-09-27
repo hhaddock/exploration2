@@ -22,11 +22,9 @@
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
         </form>
-      </div>
-      <br>
-      <hr>
-      <div class="col-md-6 col-md-push-3">
-        <span><a href="#">Create Account</a></span>
+        <div class="col-md-6 col-md-push-3">
+          <span><a href="#">Create Account</a></span>
+        </div>
       </div>
     </div>
   </body>
