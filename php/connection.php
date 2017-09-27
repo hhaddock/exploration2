@@ -30,11 +30,12 @@
 
       public function createUser($email, $username, $password){
         $pw = password_hash($password, PASSWORD_DEFAULT);
+        $auth = 0;
         $stmt = $this->conn->prepare(
           "INSERT INTO users (email, username, password, auth)
            VALUES (?,?,?,?)"
         );
-        $stmt->bind_param("sssi", $email, $username, $pw, 0);
+        $stmt->bind_param("sssi", $email, $username, $pw, $auth);
         $stmt->execute();
       }
 
