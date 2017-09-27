@@ -6,6 +6,7 @@ $(document).ready(function(){
   $("#loginForm").slideDown(1000);
 
   $("#createAcct").click(function(){
-    alert("Test");
+    $("#loginForm").slideUp();
+    $("#createAcctForm").slideDown();
   });
 });
