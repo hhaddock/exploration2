@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/funct.js"></script>
   </head>
   <body>
     <div class="container jumbotron">
       <h1 class="text-center">Hayden's Web Chat</h1>
       <hr>
-      <div class="col-md-6 col-md-push-3">
+      <div class="col-md-6 col-md-push-3" id="loginForm">
         <form action="php/controller.php" method="post">
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
