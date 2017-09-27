@@ -17,8 +17,8 @@
     <div class="container jumbotron">
       <h1 class="text-center" id="title">Hayden's Web Chat</h1>
       <hr>
-      <div class="col-md-6 col-md-push-3" id="loginForm">
-        <form action="php/controller.php" method="post">
+      <div class="col-md-6 col-md-push-3">
+        <form id="loginForm" action="php/controller.php" method="post">
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
