@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-12">
         <form action="php/controller.php" method="post">
           <label>Username: </label><input type="text" name="username">
           <label>Passsword: </label><input type="password" name="password">
