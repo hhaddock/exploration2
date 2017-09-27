@@ -28,6 +28,16 @@
        $stmt->execute();
       }
 
+      public function createUser($email, $username, $password){
+        $pw = password_hash($pass, PASSWORD_DEFAULT);
+        $stmt = $this->conn->prepare(
+          "INSERT INTO users (email, username, password, auth)
+           VALUES (?,?,?,?)"
+        );
+        $stmt->bind_param("sssi", $email, $username, $pw, '0');
+        $stmt->execute();
+      }
+
       public function checkUser($user){
         $query = "SELECT * FROM users WHERE username = ?";
         if($stmt = $this->conn->prepare($query)){
