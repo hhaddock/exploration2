@@ -29,7 +29,7 @@
       }
 
       public function createUser($email, $username, $password){
-        $pw = password_hash($pass, PASSWORD_DEFAULT);
+        $pw = password_hash($password, PASSWORD_DEFAULT);
         $stmt = $this->conn->prepare(
           "INSERT INTO users (email, username, password, auth)
            VALUES (?,?,?,?)"
