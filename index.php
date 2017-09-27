@@ -31,7 +31,7 @@
           <h3 class="text-right">Create An Account</h3>
           <label>Email: </label><input class="form-control" type="text" name="createEmail" placeholder="example@anonymous.com"><br><br>
           <label>Username: </label><input class="form-control" type="text" name="createUsername" placeholder="example"><br><br>
-          <label>Passsword: </label><input class="form-control" type="password" name="createPassword" placeholder="example"><br><br>
+          <label>Passsword: </label><input class="form-control" type="password" name="createPassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br><br>
           <input type="submit" value="Create Account" class ="btn btn-primary">
           <br><br>
           <span><a id="loginLink">Have an Account Already? Login Here</a></span>
