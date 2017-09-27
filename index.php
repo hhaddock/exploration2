@@ -13,10 +13,14 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <form action="php/controller.php" method="post">
-      <label>Username: </label><input type="text" name="username">
-      <label>Passsword: </label><input type="password" name="password">
-      <input type="submit" value="Login">
-    </form>
+    <div class="container">
+      <div class="col-md-10 col-md-offset-1">
+        <form action="php/controller.php" method="post">
+          <label>Username: </label><input type="text" name="username">
+          <label>Passsword: </label><input type="password" name="password">
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
   </body>
 </html>
