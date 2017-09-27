@@ -23,17 +23,18 @@
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
+          <span><a id="loginLink">Have an Account? Login</a></span>
         </form>
         <br>
         <form id="createAcctForm" class="hidden" action="php/controller.php" method="post">
           <h3 class="text-right">Create An Account</h3>
-          <label>email: </label><input class="form-control" type="text" name="email"><br><br>
+          <label>Email: </label><input class="form-control" type="text" name="email"><br><br>
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
         </form>
         <br>
-        <span><a id="createAcct">Create Account</a></span>
+        <span><a id="createAcctLink">Create Account</a></span>
       </div>
     </div>
   </body>
