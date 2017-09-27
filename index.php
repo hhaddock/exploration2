@@ -14,13 +14,11 @@
   </head>
   <body>
     <div class="container jumbotron">
-      <div class="col-md-12">
-        <form action="php/controller.php" method="post">
-          <label>Username: </label><input type="text" name="username">
-          <label>Passsword: </label><input type="password" name="password">
-          <input type="submit" value="Login">
-        </form>
-      </div>
+      <form action="php/controller.php" method="post">
+        <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
+        <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
+        <input type="submit" value="Login" class ="btn btn-primary">
+      </form>
     </div>
   </body>
 </html>
