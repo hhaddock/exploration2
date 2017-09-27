@@ -11,9 +11,6 @@
   $username = $_POST['createUsername'];
   $password = $_POST['createPassword'];
 
-  createUser($connection, $email, $username, $password);
+  $connection->createUser($email, $username, $password);
 
-  function createUser($connection, $email, $username, $password){
-    $connection->createUser($email, $username, $password);
-  }
 ?>
