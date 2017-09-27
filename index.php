@@ -13,10 +13,22 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container jumbotron">
+    <div class="container">
       <div class="col-md-12">
-
+        <form action="php/controller.php" method="post">
+          <label>Username: </label><input type="text" name="username">
+          <label>Passsword: </label><input type="password" name="password">
+          <input type="submit" value="Login">
+        </form>
       </div>
     </div>
   </body>
 </html>
+
+
+
+<!-- <form action="php/controller.php" method="post">
+  <label>Username: </label><input type="text" name="username">
+  <label>Passsword: </label><input type="password" name="password">
+  <input type="submit" value="Login">
+</form> -->
