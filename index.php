@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container jumbotron">
-      <div class="col-md-3">
+      <div class="col-md-6 col-md-push-3">
         <form action="php/controller.php" method="post">
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
