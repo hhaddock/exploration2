@@ -34,7 +34,7 @@
           "INSERT INTO users (email, username, password, auth)
            VALUES (?,?,?,?)"
         );
-        $stmt->bind_param("sssi", $email, $username, $pw, '0');
+        $stmt->bind_param("sssi", $email, $username, $pw, 0);
         $stmt->execute();
       }
 
