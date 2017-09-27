@@ -31,5 +31,6 @@
    $_SESSION['user'] = $user;
    setcookie('user', $user, time() + (86400), '/');
   //  header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321",  true,  301 );  exit;
+   header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2/php/auth.php",  true,  301 );  exit;
   }
 ?>
