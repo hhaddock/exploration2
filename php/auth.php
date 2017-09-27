@@ -6,5 +6,7 @@
  // echo $user = $_SESSION['user'];
  if(isset($_COOKIE['user'])){
    echo "Cookie user exists ".$_COOKIE['user'];
+ } else {
+   echo "cookie is not set!";
  }
 ?>
