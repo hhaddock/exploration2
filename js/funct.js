@@ -8,6 +8,7 @@ $(document).ready(function(){
 
   $("#createAcct").click(function(){
     $("#loginForm").slideUp();
+    $("#createAcctForm").removeCss("hidden");
     $("#createAcctForm").slideDown();
   });
 });
