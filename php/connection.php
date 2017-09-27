@@ -50,5 +50,13 @@
         $result = $result->fetch_assoc();
         return password_verify($pass, $result['password']);
       }
+
+      public function authenticateUser($auth, $user){
+       $stmt = $this->conn->prepare(
+         "UPDATE users set auth = ? WHERE username = ?"
+       );
+       $stmt->bind_param("is", $auth, $user);
+       $stmt->execute();
+      }
     }
  ?>

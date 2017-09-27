@@ -27,9 +27,10 @@
 
   function authenticated($user){
    session_start();
-   $_SESSION['authenticated'] = 'true';
+   $auth = 1;
    $_SESSION['user'] = $user;
-   header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:1234/?auth=true&user=".urlencode($user)."",  true,  301 );  exit;
+   $connection->authenticateUser($auth, $user);
+   header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:1234/",  true,  301 );  exit;
   //  header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2/php/auth.php",  true,  301 );  exit;
   }
 ?>
