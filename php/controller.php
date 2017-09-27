@@ -30,7 +30,7 @@
    $auth = 1;
    $_SESSION['user'] = $user;
    $connection->authenticateUser($auth, $user);
-   header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:1234/",  true,  301 );  exit;
+   header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:1234/?user=$user",  true,  301 );  exit;
   //  header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2/php/auth.php",  true,  301 );  exit;
   }
 ?>
