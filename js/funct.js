@@ -11,4 +11,10 @@ $(document).ready(function(){
     $("#createAcctForm").removeClass("hidden");
     $("#createAcctForm").slideDown();
   });
+
+  $("#loginLink").click(function(){
+    $("#loginForm").slideDown();
+    $("#createAcctForm").addClass("hidden");
+    $("#createAcctForm").slideUp();
+  });
 });
