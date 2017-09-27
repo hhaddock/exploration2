@@ -14,6 +14,8 @@
   </head>
   <body>
     <div class="container jumbotron">
+      <h1>Hayden's Web Chat</h1>
+      <hr>
       <div class="col-md-6 col-md-push-3">
         <form action="php/controller.php" method="post">
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
