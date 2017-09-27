@@ -12,5 +12,5 @@
   $password = $_POST['createPassword'];
 
   $connection->createUser($email, $username, $password);
-
+  header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2",  true,  301 );  exit;
 ?>
