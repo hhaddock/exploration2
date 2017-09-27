@@ -2,6 +2,6 @@ $(document).ready(function(){
   $("#loginForm").hide();
   $("#title").hide();
 
-  $("#title").slideDown(800);
-  $("#loginForm").fadeIn(800).delay(2000);
+  $("#title").fadeIn(800).delay(2000);
+  $("#loginForm").slideDown(800);
 });
