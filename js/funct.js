@@ -1,4 +1,4 @@
 $(document).ready(function(){
   $("#loginForm").hide();
-  $("#loginForm").fadeIn("slow").delay(2000);
+  $("#loginForm").fadeIn(800).delay(2000);
 });
