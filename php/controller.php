@@ -29,6 +29,6 @@
    session_start();
    $_SESSION['authenticated'] = 'true';
    $_SESSION['user'] = $user;
-   header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321",  true,  301 );  exit;
+  //  header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com:4321",  true,  301 );  exit;
   }
 ?>
