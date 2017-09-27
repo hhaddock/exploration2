@@ -23,7 +23,7 @@
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
-          <br>
+          <br><br>
           <span><a id="createAcctLink">Create Account</a></span>
         </form>
         <br>
@@ -33,7 +33,7 @@
           <label>Username: </label><input class="form-control" type="text" name="username"><br><br>
           <label>Passsword: </label><input class="form-control" type="password" name="password"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
-          <br />
+          <br><br>
           <span><a id="loginLink">Have an Account Already? Login Here</a></span>
         </form>
       </div>
