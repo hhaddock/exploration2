@@ -13,8 +13,8 @@ $(document).ready(function(){
   });
 
   $("#loginLink").click(function(){
-    $("#loginForm").slideDown();
     $("#createAcctForm").addClass("hidden");
     $("#createAcctForm").slideUp();
+    $("#loginForm").slideDown();
   });
 });
