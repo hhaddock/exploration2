@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container jumbotron">
-      <h1 class="text-center">Hayden's Web Chat</h1>
+      <h1 class="text-center" id="title">Hayden's Web Chat</h1>
       <hr>
       <div class="col-md-6 col-md-push-3" id="loginForm">
         <form action="php/controller.php" method="post">
