@@ -19,7 +19,7 @@
       <hr>
       <?php
           session_start();
-          $msg;
+          $msg = "";
           if(isset($_SESSION['message'])){
             $msg =  $_SESSION['message'];
           }
