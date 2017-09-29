@@ -22,12 +22,12 @@
       } else {
       //  $message = "Password was incorrect";
         $_SESSION['message'] = "Password was incorrect";
-        header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2?msg=user",  true,  301 );  exit;
+        header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2?msg=pass",  true,  301 );  exit;
       }
     } else {
     //  $message =  "Username is incorrect";
       $_SESSION['message'] = "Username was incorrect";
-      header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2",  true,  301 );  exit;
+      header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2?msg=user",  true,  301 );  exit;
     }
   }
 
