@@ -20,9 +20,10 @@ $(document).ready(function(){
 
   $("#loginForm").submit(function(){
     $(".login").each(function(){
+      alert($(this).val())
       if($(this).val() == " " || $(this).val() == null){
         alert("Error: you must fill out all form elements");
-        return;
+
       }
     })
   });
