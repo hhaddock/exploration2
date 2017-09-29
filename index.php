@@ -2,6 +2,12 @@
   ini_set('display_errors', 1);
   ini_set('display_startup_errors', 1);
   error_reporting(E_ALL);
+
+  session_start();
+  $msg = "";
+  if(isset($_SESSION['message'])){
+    $msg =  $_SESSION['message'];
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,14 +23,7 @@
     <div class="container jumbotron">
       <h1 class="text-center" id="title">Hayden's Web Chat</h1>
       <hr>
-      <?php
-          session_start();
-          $msg = "";
-          if(isset($_SESSION['message'])){
-            $msg =  $_SESSION['message'];
-          }
-          echo $msg;
-      ?>
+      <?= $msg; ?>
       <div class="col-md-6 col-md-push-3">
         <form id="loginForm" action="php/controller.php" method="post">
           <h3 class="text-right">Login</h3>
