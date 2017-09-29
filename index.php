@@ -11,7 +11,7 @@
     $msg = "<span class='text-center text-danger'><h4>Username is incorrect!</h4></span>";
   }
   if($msg == "pass"){
-    $msg = "<span class='text-center text-danger'><h4>Username is incorrect!</h4></span>";
+    $msg = "<span class='text-center text-danger'><h4>Password is incorrect!</h4></span>";
   }
 ?>
 <!DOCTYPE html>
