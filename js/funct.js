@@ -23,7 +23,7 @@ $(document).ready(function(){
       if($(this).length <= 1){
         alert("Error: you must fill out all form elements");
         event.preventDefault();
-        return;
+        break;
       }
     })
   });
