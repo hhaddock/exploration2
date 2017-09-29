@@ -18,6 +18,7 @@
       <h1 class="text-center" id="title">Hayden's Web Chat</h1>
       <hr>
       <?php
+          session_start();
           if(isset($_SESSION['message'])){
             echo $_SESSION['message'];
           }
