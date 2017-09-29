@@ -21,7 +21,7 @@ $(document).ready(function(){
   $("#loginForm").submit(function(event){
     $(".login").each(function(){
       alert($(this).length)
-      if($(this).length == 0){
+      if($(this).length <= 1){
         alert("Error: you must fill out all form elements");
         event.preventDefault();
       }
