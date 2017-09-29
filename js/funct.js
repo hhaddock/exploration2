@@ -20,8 +20,8 @@ $(document).ready(function(){
 
   $("#loginForm").submit(function(event){
     $(".login").each(function(){
-      alert($(this).size())
-      if($(this).size() == 0){
+      alert($(this).length)
+      if($(this).length == 0){
         alert("Error: you must fill out all form elements");
         event.preventDefault();
       }
