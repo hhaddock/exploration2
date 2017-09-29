@@ -17,7 +17,7 @@
     <div class="container jumbotron">
       <h1 class="text-center" id="title">Hayden's Web Chat</h1>
       <hr>
-      <?php if(isset($_SESSION['message'])){ echo $_SESSION['message']; } ?>
+      <?php echo $_SESSION['message'];?>
       <div class="col-md-6 col-md-push-3">
         <form id="loginForm" action="php/controller.php" method="post">
           <h3 class="text-right">Login</h3>
