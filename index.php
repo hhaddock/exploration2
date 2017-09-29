@@ -6,7 +6,6 @@
   session_start();
   $msg = "";
   if(isset($_GET['msg'])){ $msg = $_GET['msg']; }
-  echo $msg;
   if($msg == "user"){
     $msg = "<span class='text-center text-danger'><h4>Username is incorrect!</h4></span>";
   }
