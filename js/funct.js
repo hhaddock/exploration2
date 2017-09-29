@@ -19,8 +19,11 @@ $(document).ready(function(){
   });
 
   $("#loginForm").submit(function(){
-    $(".form-control").each(function(){
-      alert($(this).val());
+    $(".login").each(function(){
+      if($(this).val() == "" || $(this).val() == null){
+        alert("Error: you must fill out all form elements");
+        return;
+      }
     })
   });
 });
