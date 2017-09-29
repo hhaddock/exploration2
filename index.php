@@ -5,6 +5,13 @@
 
   session_start();
   $msg = $_GET['msg'];
+  if($msg == "user"){
+    $msg = "<span><h4>Username is incorrect!</h4></span>";
+  } else if($msg == "pass"){
+    $msg = "<span><h4>Password is incorrect!</h4></span>";
+  } else {
+    $msg = "";
+  }
 ?>
 <!DOCTYPE html>
 <html>
