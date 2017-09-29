@@ -18,12 +18,12 @@ $(document).ready(function(){
     $("#loginForm").slideDown();
   });
 
-  $("#loginForm").submit(function(){
+  $("#loginForm").submit(function(event){
     $(".login").each(function(){
-      alert($(this).val())
+      // alert($(this).val())
       if($(this).val() == " " || $(this).val() == null){
         alert("Error: you must fill out all form elements");
-
+        event.preventDefault();
       }
     })
   });
