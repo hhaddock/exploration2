@@ -4,10 +4,7 @@
   error_reporting(E_ALL);
 
   session_start();
-  $msg = "";
-  if(isset($_SESSION['message'])){
-    $msg =  $_SESSION['message'];
-  }
+  $msg = $_GET['msg'];
 ?>
 <!DOCTYPE html>
 <html>
