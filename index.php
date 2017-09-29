@@ -19,9 +19,11 @@
       <hr>
       <?php
           session_start();
+          $msg;
           if(isset($_SESSION['message'])){
-            echo $_SESSION['message'];
+            $msg =  $_SESSION['message'];
           }
+          echo $msg;
       ?>
       <div class="col-md-6 col-md-push-3">
         <form id="loginForm" action="php/controller.php" method="post">
