@@ -7,6 +7,8 @@
 
   require "connection.php";
 
+  $message = "";
+
   $connection = new webChatDB();
   $username = $_POST['username'];
   $password = $_POST['password'];
@@ -18,10 +20,12 @@
       if($connection->checkPass($user, $pass) == 1){
        authenticated($connection, $user);
       } else {
-       echo "Password was incorrect";
+       $message = "Password was incorrect";
+       header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2",  true,  301 );  exit;
       }
     } else {
-     echo "Username is incorrect";
+     $message =  "Username is incorrect";
+     header("location: http://ec2-34-209-75-64.us-west-2.compute.amazonaws.com/exploration2",  true,  301 );  exit;
     }
   }
 
