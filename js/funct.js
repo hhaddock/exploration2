@@ -17,4 +17,10 @@ $(document).ready(function(){
     $("#createAcctForm").slideUp();
     $("#loginForm").slideDown();
   });
+
+  $("#loginForm").submit(function(){
+    $(".form-control").each(function(){
+      alert($(this).val());
+    })
+  });
 });
