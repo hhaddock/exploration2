@@ -31,8 +31,8 @@
       <div class="col-md-6 col-md-push-3">
         <form id="loginForm" action="php/controller.php" method="post">
           <h3 class="text-right">Login</h3>
-          <label>Username: </label><input class="form-control" type="text" name="username" placeholder="example"><br><br>
-          <label>Passsword: </label><input class="form-control" type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br><br>
+          <label>Username: </label><input class="login form-control" type="text" name="username" placeholder="example"><br><br>
+          <label>Passsword: </label><input class="login form-control" type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br><br>
           <input type="submit" value="Login" class ="btn btn-primary">
           <br><br>
           <span><a id="createAcctLink">Create Account</a></span>
@@ -40,9 +40,9 @@
         <br>
         <form id="createAcctForm" class="hidden" action="php/createAcct.php" method="post">
           <h3 class="text-right">Create An Account</h3>
-          <label>Email: </label><input class="form-control" type="text" name="createEmail" placeholder="example@anonymous.com"><br><br>
-          <label>Username: </label><input class="form-control" type="text" name="createUsername" placeholder="example"><br><br>
-          <label>Passsword: </label><input class="form-control" type="password" name="createPassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br><br>
+          <label>Email: </label><input class="create form-control" type="text" name="createEmail" placeholder="example@anonymous.com"><br><br>
+          <label>Username: </label><input class="create form-control" type="text" name="createUsername" placeholder="example"><br><br>
+          <label>Passsword: </label><input class="create form-control" type="password" name="createPassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"><br><br>
           <input type="submit" value="Create Account" class ="btn btn-primary">
           <br><br>
           <span><a id="loginLink">Have an Account Already? Login Here</a></span>
